@@ -5,11 +5,11 @@ public class Robot {
     private String emotion;
     private String memory;
 
-    public Human(){
+    public Robot(){
         System.out.println("Human have doing anything");
     }
 
-    public Human(String thinking,String emotion,String memory){
+    public Robot(String thinking,String emotion,String memory){
         this.thinking=thinking;
         this.emotion=emotion;
         this.memory=memory;
