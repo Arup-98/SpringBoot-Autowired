@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AutowiredApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AutowiredApplication.class, args);
+		CreatureInfo creatureInfo=SpringApplication.run(AutowiredApplication.class, args).getBean(CreatureInfo.class);
+		creatureInfo.setInfo("Positive","Own","Unlimited");
+		creatureInfo.print();
 	}
 
 }
